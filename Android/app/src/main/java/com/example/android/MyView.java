@@ -12,11 +12,18 @@ public class MyView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         Paint paint = new Paint();
-        int y = 0;
-        while (y < canvas.getHeight()) {
-            canvas.drawLine(0, y, this.getWidth(), y, paint);
-            y += 30;
-        }
-
+        paint.setColor(Color.YELLOW);
+        paint.setStyle(Paint.Style.FILL);
+        canvas.drawCircle(300,300,200,paint);
+        paint.setColor(Color.RED);
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setStrokeWidth(20);
+        canvas.drawCircle(300,300,200,paint);
     }
-}
+/* (1)
+int y = 0;
+        while (y < canvas.getHeight()) {
+            canvas.drawLine(0, y,
+                this.getWidth(), y, paint);
+            y += 30;*/
+    }
