@@ -10,25 +10,33 @@ public class MyView2 extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
+        int x = 0;
         Paint paint = new Paint();
-        paint.setColor(Color.RED);
-        int x = 0; int y=0;
-        while(x<getHeight()){
-            canvas.drawLine(x,0,0,y,paint);
-            x+=50;
-            y+=50;
+        paint.setColor(Color.BLACK);
+        canvas.drawPaint(paint);
+        paint.setColor(Color.CYAN);
+        while (x < getWidth()) {
+            canvas.drawLine(0, 1000, x, 0, paint);
+            x += 50;
         }
-        int z=0;
-        while (z<getHeight())
-        {
-            z+=1;
+        x=0;
+            paint.setColor(Color.CYAN);
+            while (x < getWidth()) {
+                canvas.drawLine(x, getHeight(), getWidth(), 500, paint);
+                x += 50;
+            }
+            paint.setColor(Color.YELLOW);
+            canvas.drawCircle(500, 1000, 400, paint);
+            paint.setColor(Color.RED);
+            canvas.drawCircle(800, 1500, 100, paint);
+            paint.setColor(Color.GRAY);
+            canvas.drawCircle(700, 400, 150, paint);
+            paint.setColor(Color.BLUE);
+            canvas.drawCircle(200, 200, 100, paint);
+            paint.setColor(Color.WHITE);
+
         }
-        while (x<z*2)
-        {
-            canvas.drawLine(x,0,0,y,paint);
-            x+=30;
-            y+=30;
-        }
+
     }
-}
+
+
