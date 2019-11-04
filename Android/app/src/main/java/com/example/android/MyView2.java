@@ -20,7 +20,7 @@ public class MyView2 extends View {
             y+=50;
         }
         int z=0;
-        while (z<canvas.getHeight())
+        while (z<getHeight())
         {
             z+=1;
         }
