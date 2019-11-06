@@ -43,12 +43,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/MyView2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
-              <caret line="85" column="54" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="92" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2576#2577#0" expanded="true" />
                 <element signature="e#2617#2618#0" expanded="true" />
+                <element signature="e#2692#2693#0" expanded="true" />
                 <element signature="e#2727#2728#0" expanded="true" />
               </folding>
             </state>
@@ -244,12 +245,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/MyView2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="85" column="54" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="92" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2576#2577#0" expanded="true" />
             <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
             <element signature="e#2727#2728#0" expanded="true" />
           </folding>
         </state>
