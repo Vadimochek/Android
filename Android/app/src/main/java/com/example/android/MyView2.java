@@ -1,7 +1,6 @@
 package com.example.android;
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.*;
 import android.graphics.Paint;
 import android.view.View;
 
@@ -11,52 +10,36 @@ public class MyView2 extends View {
     float[] y  = new float[N];
     float[] vx = new float[N];
     float[] vy = new float[N];
-    float r;
     public MyView2(Context context) {
         super(context);
+        fillRandom(x, 0, 500);
+        fillRandom(y, 0, 500);
+        fillRandom(vx, -3, 3);
+        fillRandom(vy, -3,3);
+    }
+    float rand(float min , float max){
+        return (float)(Math.random() * (max - min + 1)) + min;
+    }
+    void fillRandom(float[] array , float min, float max){
+        for (int i = 0; i < array.length; i++){
+            array[i] = rand (min, max);
+        }
+    }
+    void add(float[] array , float[] values){
+        for (int i = 0; i < array.length; i++){
+            array[i] += values[i];
+        }
     }
     Paint paint = new Paint();
-    boolean started;
 
     @Override
 
     protected void onDraw(Canvas canvas) {
-
-        if(!started) {
-          for (int i = 0; i < N; i++){
-        x[i] = (float)(Math.random() * 400);
-        y[i] = (float)(Math.random() * 400);
-        vx[i] = (float)(Math.random() * 20 - 3);
-        vy[i] = (float)(Math.random() * 20 - 3);
-        }
-        started = true;
-        }
         for (int i = 0; i < N; i++) {
-           if (i%5==0) {r=(float)(Math.random() * 50);}
-            paint.setColor(Color.GREEN);
-        canvas.drawCircle(x[i], y[i], 20+r, paint);
-
+            canvas.drawCircle(x[i], y[i], 20, paint);
         }
-        for (int i = 0; i < N; i++) {
-        x[i] += vx[i];
-        y[i] += vy[i];
-        }
-        for (int i = 0; i < N; i++) {
-            if (x[i] < 0 || x[i] > this.getWidth()) {
-                vx[i] = -vx[i];
-                paint.setColor(Color.RED);
-                canvas.drawCircle(x[i], y[i], 20+5*r, paint);
-            }
-            if (y[i] < 0 || y[i] > this.getHeight()) {
-                vy[i] = -vy[i];paint.setColor(Color.RED);
-                canvas.drawCircle(x[i], y[i], 20+5*r, paint);
-            }
-        }
-        for (int i = 0; i < N - 1; i++) {
-            paint.setColor(Color.BLUE);
-            canvas.drawLine(x[i], y[i], x[i + 1], y[i + 1], paint);
-
-        }
+        add(x, vx);
+        add(y, vy);
         invalidate();
         }
         }
