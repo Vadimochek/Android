@@ -1,6 +1,7 @@
 package com.example.android;
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
 
@@ -20,6 +21,12 @@ public class MyView2 extends View {
     float rand(float min , float max){
         return (float)(Math.random() * (max - min + 1)) + min;
     }
+    void drawBalls(Canvas canvas){
+       paint.setColor(Color.BLACK);
+        for (int i = 0; i < N; i++) {
+            canvas.drawCircle(x[i], y[i], 20, paint);
+        }
+    }
     void fillRandom(float[] array , float min, float max){
         for (int i = 0; i < array.length; i++){
             array[i] = rand (min, max);
@@ -35,9 +42,7 @@ public class MyView2 extends View {
     @Override
 
     protected void onDraw(Canvas canvas) {
-        for (int i = 0; i < N; i++) {
-            canvas.drawCircle(x[i], y[i], 20, paint);
-        }
+        drawBalls(canvas);
         add(x, vx);
         add(y, vy);
         invalidate();
