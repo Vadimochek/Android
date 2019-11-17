@@ -1,18 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#00B34747"
+    android:orientation="horizontal"
+    tools:context="com.example.myapplication.MainActivity1">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#00D51010"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="8dp"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+
+            android:hint="@string/s2" />
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="left"
+            android:hint="@string/s3" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="left"
+            android:hint="@string/s4" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="left"
+            android:hint="@string/s5" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="left"
+            android:hint="@string/s7" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="left"
+            android:hint="@string/s6" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="left"
+            android:hint="@string/s8" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="left"
+            android:hint="@string/s9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:accessibilityHeading="false"
+        android:alwaysDrawnWithCache="false"
+        android:orientation="vertical"
+        android:paddingLeft="20"
+        android:paddingTop="1"
+        tools:visibility="visible">
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="22dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="21dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="22dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="0.2" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2">
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <CalendarView
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_weight="1"
+        android:text="CheckBox" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+
