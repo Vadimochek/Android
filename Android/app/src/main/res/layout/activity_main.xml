@@ -5,37 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.myapplication.MainActivity">
+    tools:context="com.example.myapplication.MainActivity1">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="24dp"
-        android:text="@string/title" />
+        />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/coefficient_a"
-        android:hint="@string/a"/>
+        android:inputType="textEmailAddress"
+        android:id="@+id/log"
+        android:hint="@string/login"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/coefficient_b"
-        android:hint="@string/b"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/coefficient_c"
-        android:hint="@string/c"/>
+        android:id="@+id/Pas"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="solveEquation"
-        android:text="@string/calculate"/>
+        android:text="@string/enter"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:id="@+id/result"/>
 
+        android:textColor="@color/Yes"
+        android:id="@+id/enter1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/No"
+        android:id="@+id/enter2" />
 </LinearLayout>
