@@ -30,8 +30,8 @@ public class Mon extends Activity {
 
     }
     @Override
-public void onPause(){
-        super.onPause();
+public void onDestroy(){
+        super.onDestroy();
     zame=zam.getText().toString();
     SharedPreferences.Editor editor = mSettings.edit();
     editor.putString(APP_PREFERENCES_NAME,zame);
