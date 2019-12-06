@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
     <string name="s2">Фамилия</string>
     <string name="s3">Имя</string>
     <string name="s4">Отчество</string>

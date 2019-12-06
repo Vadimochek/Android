@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:text="                                        Выберите день недели" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Понедельник" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ВТОРНИК" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="СРЕДА" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ЧЕТВЕРГ" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="in"
+        android:text="ПЯТНИЦА" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="СУББОТА" />
+</LinearLayout>
