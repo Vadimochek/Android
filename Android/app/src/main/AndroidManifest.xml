@@ -3,11 +3,7 @@
     package="ru.samsung.itschool.book.equation243" >
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        >
        
 
         <activity android:name="com.example.android.MainActivity1" >
@@ -17,6 +13,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name="com.example.android.MyService"
+        android:enabled="true"
+        android:exported="true"/>
     </application>
+
 
 </manifest>

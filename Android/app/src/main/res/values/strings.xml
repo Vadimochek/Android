@@ -1,6 +1,11 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="login">Логин</string>
-    <string name="password">Пароль</string>
-    <string name="enter">Вход</string>
+    <string name="s2">Фамилия</string>
+    <string name="s3">Имя</string>
+    <string name="s4">Отчество</string>
+    <string name="s5">Год</string>
+    <string name="s6">Школа</string>
+    <string name="s7">Город</string>
+    <string name="s8">Опыт программирования</string>
+    <string name="s9">Знание языков програмиирования</string>
+
 </resources>
