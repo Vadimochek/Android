@@ -1,5 +1,5 @@
 <resources>
-    <string name="c">Стереть</string>
-    <string name="backspace">Удалить</string>
+    <string name="c">C</string>
+    <string name="backspace">Backspace</string>
     <string name="equally">=</string>
 </resources>
