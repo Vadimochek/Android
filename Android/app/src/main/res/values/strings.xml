@@ -1,11 +1,5 @@
 <resources>
-    <string name="s2">Фамилия</string>
-    <string name="s3">Имя</string>
-    <string name="s4">Отчество</string>
-    <string name="s5">Год</string>
-    <string name="s6">Школа</string>
-    <string name="s7">Город</string>
-    <string name="s8">Опыт программирования</string>
-    <string name="s9">Знание языков програмиирования</string>
-
+    <string name="c">Стереть</string>
+    <string name="backspace">Удалить</string>
+    <string name="equally">=</string>
 </resources>
