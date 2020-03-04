@@ -5,44 +5,6 @@
     android:layout_height="match_parent"
     android:background="#16DB1E"
     android:orientation="horizontal">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#8BC34A"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ПОМОЩНИК ШКОЛЬНИКА" />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Логин"
-            android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Пароль"
-            android:inputType="textPassword" />
-
-        <Button
-            android:id="@+id/button3"
-            style="@android:style/Widget.DeviceDefault.Button.Colored"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="Login"
-            android:text="ВОЙТИ" />
-
-    </LinearLayout>
 </LinearLayout>
 
 

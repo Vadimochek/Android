@@ -13,32 +13,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.Game">
-        </activity>
-        <activity
-            android:name="com.example.android.Mon"
-            >
-        </activity>
-        <activity
-            android:name="com.example.android.Tuesday"
-            >
-        </activity>
-        <activity
-            android:name="com.example.android.Wednes"
-            >
-        </activity>
-        <activity
-            android:name="com.example.android.Thursday"
-            >
-        </activity>
-        <activity
-            android:name="com.example.android.Friday"
-            >
-        </activity>
-        <activity
-            android:name="com.example.android.Satur"
-            >
-        </activity>
+        <service android:name="com.example.android.MyService"
+        android:enabled="true"
+        android:exported="true"/>
     </application>
+
 
 </manifest>
